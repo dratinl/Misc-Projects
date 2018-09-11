@@ -33,6 +33,7 @@ while (test_amt > 0) :
 	array_size = int(lines.pop(0))
 	temp_arr = lines.pop(0)
 	arr = [int(s) for s in temp_arr.split(' ')]
+	arr = sorted(arr, key=int)
 	key = int(lines.pop(0))
 	test_amt -= 1
 	result.append(bin_search(arr, array_size, key))
