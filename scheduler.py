@@ -31,11 +31,6 @@ def create_schedule(sch, av_times ):
 		y=[av_times.pop(0)]
 		if len(av_times)<1:
 			break
-	sch.append([x[0],y[0]+1])
+	sch.append([x[0],y[0]s+1])
 	return create_schedule(sch, av_times)
 
-example = [
- [[4,5],[6,10],[12,14]],
- [[4,5],[5,9],[13,16]],
- [[11,14]]]
-schedule(example)
