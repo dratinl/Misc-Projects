@@ -3,6 +3,14 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
+# InstagramBot
+# Code built using Jerome Mottet's design @ 'https://medium.com/@mottet.dev/lets-create-an-instagram-bot-to-show-you-the-power-of-selenium-349d7a6744f7'
+# Current Functions:
+# Sign in
+# Get follower profiles (need username and amount of followers)
+# Un/Follow User (need username and sign in required)
+# Get number of Followers (need username)
+
 class InstagramBot():
     def __init__(self, email, password):
         self.browserProfile = webdriver.ChromeOptions()
